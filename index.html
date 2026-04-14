@@ -1,21 +1,125 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
-        <title>Fark Foods</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Fark Foods - Premium Hot Sauce</title>
+        <style>
+            body {
+                font-family: Arial, sans-serif;
+                margin: 0;
+                padding: 0;
+                background: linear-gradient(135deg, #ff5227 0%, #ff8c42 100%);
+                color: #333;
+                min-height: 100vh;
+            }
+            header {
+                background-color: rgba(255, 255, 255, 0.9);
+                padding: 20px;
+                text-align: center;
+                box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            }
+            .logo {
+                max-width: 200px;
+                height: auto;
+            }
+            main {
+                max-width: 1200px;
+                margin: 0 auto;
+                padding: 40px 20px;
+                text-align: center;
+            }
+            .hero {
+                background-color: rgba(255, 255, 255, 0.9);
+                border-radius: 10px;
+                padding: 40px;
+                margin-bottom: 40px;
+                box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+            }
+            .hero img {
+                max-width: 100%;
+                height: auto;
+                margin-bottom: 20px;
+            }
+            .content {
+                display: grid;
+                grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+                gap: 30px;
+                margin-top: 40px;
+            }
+            .section {
+                background-color: rgba(255, 255, 255, 0.9);
+                border-radius: 10px;
+                padding: 30px;
+                box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+            }
+            footer {
+                background-color: rgba(0, 0, 0, 0.8);
+                color: white;
+                text-align: center;
+                padding: 20px;
+                margin-top: 40px;
+            }
+            .social-links {
+                margin-top: 20px;
+            }
+            .social-links a {
+                display: inline-block;
+                margin: 0 10px;
+                transition: transform 0.3s;
+            }
+            .social-links a:hover {
+                transform: scale(1.1);
+            }
+            .social-links img {
+                width: 40px;
+                height: 40px;
+            }
+            @media (max-width: 768px) {
+                main {
+                    padding: 20px 10px;
+                }
+                .hero {
+                    padding: 20px;
+                }
+                .content {
+                    grid-template-columns: 1fr;
+                }
+            }
+        </style>
     </head>
-   <style>
-        body {
-            background-color: #ff5227;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-        }
-        img {
-            height: 75vw;
-        }
-    </style>
     <body>
-        <img src="images/farksauce.svg" alt="Fark Foods">
+        <header>
+            <img src="images/farksauce.svg" alt="Fark Foods Logo" class="logo">
+        </header>
+        <main>
+            <section class="hero">
+                <img src="images/farksauce.svg" alt="Fark Sauce">
+                <h1>Welcome to Fark Foods</h1>
+                <p>Experience the perfect blend of heat and flavor with our premium hot sauce collection.</p>
+            </section>
+            <div class="content">
+                <section class="section">
+                    <h2>About Us</h2>
+                    <p>Fark Foods is dedicated to crafting exceptional hot sauces that elevate your culinary adventures. Our sauces are made with the finest ingredients and a passion for bold flavors.</p>
+                </section>
+                <section class="section">
+                    <h2>Our Products</h2>
+                    <p>Discover our range of hot sauces, from mild to extreme heat. Each bottle is crafted to deliver an unforgettable taste experience.</p>
+                </section>
+                <section class="section">
+                    <h2>Contact</h2>
+                    <p>Have questions? Reach out to us! We're here to help you find the perfect sauce for your needs.</p>
+                </section>
+            </div>
+        </main>
+        <footer>
+            <p>&copy; 2024 Fark Foods. All rights reserved.</p>
+            <div class="social-links">
+                <a href="https://instagram.com/farkfoods" target="_blank">
+                    <img src="images/instalogo.svg" alt="Follow us on Instagram">
+                </a>
+            </div>
+        </footer>
     </body>
 </html>
