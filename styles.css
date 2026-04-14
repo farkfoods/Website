@@ -27,7 +27,7 @@ nav ul li {
 
 nav ul li a {
     text-decoration: none;
-    color: #333;
+    color: white;
     font-weight: bold;
 }
 
@@ -42,26 +42,78 @@ nav ul li a {
 }
 
 #section1 {
-    background-color: #e43400;
+    --x1: 20%;
+    --y1: 50%;
+    --x2: 80%;
+    --y2: 50%;
+    --x3: 50%;
+    --y3: 20%;
+    --x4: 30%;
+    --y4: 80%;
+    background: radial-gradient(circle at var(--x1) var(--y1), rgba(235, 27, 0, 0.7) 0%, transparent 50%),
+                radial-gradient(circle at var(--x2) var(--y2), rgba(255, 122, 88, 0.836) 0%, transparent 50%),
+                radial-gradient(circle at var(--x3) var(--y3), rgba(255, 99, 71, 0.5) 0%, transparent 50%),
+                radial-gradient(circle at var(--x4) var(--y4), rgba(205, 92, 92, 0.3) 0%, transparent 50%),
+                linear-gradient(to bottom, #de230c, #ff7d65);
 }
 
 #section2 {
-    background-color: #e0e0e0;
+    --x1: 30%;
+    --y1: 70%;
+    --x2: 70%;
+    --y2: 30%;
+    --x3: 10%;
+    --y3: 40%;
+    --x4: 90%;
+    --y4: 60%;
+    background: radial-gradient(circle at var(--x1) var(--y1), rgba(228, 52, 0, 0.7) 0%, transparent 50%),
+                radial-gradient(circle at var(--x2) var(--y2), rgba(255, 140, 105, 0.5) 0%, transparent 50%),
+                radial-gradient(circle at var(--x3) var(--y3), rgba(255, 69, 0, 0.5) 0%, transparent 50%),
+                radial-gradient(circle at var(--x4) var(--y4), rgba(255, 160, 122, 0.3) 0%, transparent 50%),
+                linear-gradient(to bottom, #e43400, #ff7f50);
 }
 
 #section3 {
-    background-color: #d0d0d0;
+    --x1: 40%;
+    --y1: 60%;
+    --x2: 60%;
+    --y2: 40%;
+    --x3: 70%;
+    --y3: 10%;
+    --x4: 20%;
+    --y4: 90%;
+    background: radial-gradient(circle at var(--x1) var(--y1), rgb(255, 151, 15) 0%, transparent 50%),
+                radial-gradient(circle at var(--x2) var(--y2), rgba(255, 179, 71, 0.5) 0%, transparent 50%),
+                radial-gradient(circle at var(--x3) var(--y3), rgba(255, 215, 0, 0.5) 0%, transparent 50%),
+                radial-gradient(circle at var(--x4) var(--y4), rgba(255, 140, 0, 0.3) 0%, transparent 50%),
+                linear-gradient(to bottom, #de6c08, #ffb347);
 }
 
 #section4 {
-    background-color: #c0c0c0;
+    --x1: 50%;
+    --y1: 50%;
+    --x2: 25%;
+    --y2: 75%;
+    --x3: 75%;
+    --y3: 25%;
+    --x4: 5%;
+    --y4: 95%;
+    background: radial-gradient(circle at var(--x1) var(--y1), rgba(192, 192, 192, 0.7) 0%, transparent 50%),
+                radial-gradient(circle at var(--x2) var(--y2), rgba(208, 208, 208, 0.5) 0%, transparent 50%),
+                radial-gradient(circle at var(--x3) var(--y3), rgba(169, 169, 169, 0.5) 0%, transparent 50%),
+                radial-gradient(circle at var(--x4) var(--y4), rgba(211, 211, 211, 0.3) 0%, transparent 50%),
+                linear-gradient(to bottom, #c0c0c0, #d0d0d0);
 }
 
 h1, h2 {
     margin-bottom: 20px;
+    color: white;
+    font-weight: bold;
 }
 
 p {
     max-width: 600px;
     line-height: 1.6;
+    color: white;
+    font-weight: bold;
 }
