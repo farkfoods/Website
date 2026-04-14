@@ -1,6 +1,6 @@
 body {
     margin: 0;
-    font-family: Arial, sans-serif;
+    font-family: 'Inter', sans-serif;
     scroll-behavior: smooth;
 }
 
@@ -42,7 +42,7 @@ nav ul li a {
 }
 
 #section1 {
-    background-color: #f0f0f0;
+    background-color: #e43400;
 }
 
 #section2 {
